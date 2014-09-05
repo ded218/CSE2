@@ -15,7 +15,7 @@ public class WelcomeClass{
         
 //  printing the statement with a box around it
     System.out.println("          -----------           ");
-    System.out.println("          |WELCOME |            ");
+    System.out.println("          | WELCOME |           ");
     System.out.println("          -----------           ");
     System.out.println("      ^   ^   ^   ^   ^   ^     ");
     System.out.println("     / \\/ \\/ \\/ \\/ \\/ \\   ");
