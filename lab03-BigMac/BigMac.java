@@ -22,11 +22,11 @@ public class BigMac {
                 System.out.print(
                 "Enter the percent tax as a whole number (xx): ");
                 double taxRate = myScanner.nextDouble();
-                taxRate/=100; //user enter percent, but I want
+                taxRate/=100; // I entered the percent
                     //proportion
                     double cost$;
                     int dollars, //whole dollar amount of cost
-                        dimes, pennies; //for stroing digits
+                        dimes, pennies; //for strong digits
                             //to the right of decimal point
                             //for cost$
                     cost$ = nBigMacs*bigMac$*(1+taxRate);
