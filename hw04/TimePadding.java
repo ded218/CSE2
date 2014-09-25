@@ -15,32 +15,32 @@ public class TimePadding {
     System.out.println("Enter the time in seconds: "); //prompting the user to input 
     if(myScanner.hasNextInt()){ //making overall if statement 
         int nSec = myScanner.nextInt(); //accepting user input for month
-        int nHours = nSec /3600;
-        int nMin = (nSec % 3600) / 60;
-        int sec = nSec % 60;
+        int nHours = nSec /3600; // calculating hours
+        int nMin = (nSec % 3600) / 60; // calculating minutes
+        int sec = nSec % 60; //calculating seconds
        
-        if(nSec>0){
-            if (sec<10 && !(nMin<10)) {
-                String time = nHours + ":" + nMin + ":0" + sec;
-                System.out.println (time);
-            }
-            if (!(sec<10) && nMin<10) {
-                String time = nHours + ":0" + nMin + ":" + sec;
-                System.out.println (time);
-            }
-            if (sec<10 && nMin<10) {
-                String time = nHours + ":0" + nMin + ":0" + sec;
-                System.out.println (time);
-            }
-            else {
-                String time = nHours + ":" + nMin + ":" + sec;
-                System.out.println (time);
-            }
-        }
+        if(nSec>0){ //creating overall if statement
+            if (sec<10 && !(nMin<10)) { //defining inputs for if statement
+                String time = nHours + ":" + nMin + ":0" + sec; //string for output
+                System.out.println (time); //output with string used
+            }//if statement closed
+            if (!(sec<10) && nMin<10) { //defining inputs for if statement
+                String time = nHours + ":0" + nMin + ":" + sec; //string for ouptput
+                System.out.println (time); //output with string used
+            }//if statement closed
+            if (sec<10 && nMin<10) { //defining inputs for if statement
+                String time = nHours + ":0" + nMin + ":0" + sec; //string for output
+                System.out.println (time); // output with string used
+            }//if statement closed
+            else { //else statement
+                String time = nHours + ":" + nMin + ":" + sec; //string for output
+                System.out.println (time); //output with string used
+            }//else statement closed
+        }//overall if statement closed
         else{
-            System.out.println("Incorrect.");
-        }
-        }    
+            System.out.println("Incorrect."); //else statement for incorrect input
+        }//else statement closed
+        }//overall if statement closed   
     
-    }
-}
+    }//end of main method
+}//end of class
