@@ -13,8 +13,22 @@ public class CourseNumber {
     Scanner myScanner; //declaring instance of scanner object
     myScanner = new Scanner( System.in ); // calling the scanner constuctor
     System.out.println("Enter a six digit number giving the course semester- "); //prompting user for the input
+   
     if(myScanner.hasNextInt()){ //making overall if statement
-        int nSem= = myScanner.nextInt(); // accepting user input
-        double 
+        int number=myScanner.nextInt();
+        int nYear = number/100;
+        int semester=number % 100;
+        if(number<186510 || number>201440){
+           System.out.println("The number was outside the range [186510,201440]");
+        }
+        switch (semester) { //switch statement
+            case 10: System.out.println ("The course was offered in the Spring semester of "+nYear+"."); break;
+            case 20: System.out.println ("The course was offered in the Summer 1 semester of "+nYear+"."); break;
+            case 30: System.out.println ("The course was offered in the Summer 2 semester of "+nYear+"."); break;
+            case 40: System.out.println ("The course was offered in the Fall semester of "+nYear+"."); break;
+                
+        }
+    }
+    
     }
 }
