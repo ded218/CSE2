@@ -15,20 +15,20 @@ public class CourseNumber {
     System.out.println("Enter a six digit number giving the course semester- "); //prompting user for the input
    
     if(myScanner.hasNextInt()){ //making overall if statement
-        int number=myScanner.nextInt();
-        int nYear = number/100;
-        int semester=number % 100;
-        if(number<186510 || number>201440){
-           System.out.println("The number was outside the range [186510,201440]");
+        int number=myScanner.nextInt(); //defining scanner
+        int nYear = number/100; //defining year for input
+        int semester=number % 100; //defining number for input
+        if(number<186510 || number>201440){ //creating condition to avoid 
+           System.out.println("The number was outside the range [186510,201440]"); //output 
         }
         switch (semester) { //switch statement
-            case 10: System.out.println ("The course was offered in the Spring semester of "+nYear+"."); break;
-            case 20: System.out.println ("The course was offered in the Summer 1 semester of "+nYear+"."); break;
-            case 30: System.out.println ("The course was offered in the Summer 2 semester of "+nYear+"."); break;
-            case 40: System.out.println ("The course was offered in the Fall semester of "+nYear+"."); break;
+            case 10: System.out.println ("The course was offered in the Spring semester of "+nYear+"."); break; //for spring semester
+            case 20: System.out.println ("The course was offered in the Summer 1 semester of "+nYear+"."); break; //for summer 1 semester
+            case 30: System.out.println ("The course was offered in the Summer 2 semester of "+nYear+"."); break; //for summer 2 semester
+            case 40: System.out.println ("The course was offered in the Fall semester of "+nYear+"."); break; //for fall semester
                 
-        }
-    }
+        }//end of swtich statement
+    }//end of if statement
     
-    }
-}
+    }//end of main method
+}//end of class
