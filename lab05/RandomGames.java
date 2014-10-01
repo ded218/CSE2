@@ -32,6 +32,7 @@ public class RandomGames {
             }//end of if statment for p
         else{  
             System.out.println(game+" is not one of R, r,C,c,P or p");//else statement that ensure the program doesn't accept anything besides p,r, or c
+            
         } //end of else statement
         } // end of main method 
 } //end of class
