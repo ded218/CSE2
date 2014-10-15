@@ -13,7 +13,7 @@ public class Root {
     public static void main(String[] args) {
     Scanner myScanner;  //declaring instance of scanner object
     myScanner = new Scanner( System.in ); //calling the scanner constructor
-    System.out.println("Enter a number"); //prompting the user
+    System.out.println("Enter a double that is greater than zero: "); //prompting the user
     double x = myScanner.nextDouble(); //accepting user input
     if (x>0){
             double low = 0;//setting low 
