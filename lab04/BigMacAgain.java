@@ -37,9 +37,9 @@ public class BigMacAgain {
         else{//else statement for if user enters anything besides Y y N or n
             System.out.println ("You did not enter Y, y, N, or n."); // telling user what they should've entered
         }//end of else statement 
-        }//end of big if statement
-        else{ //else statement for if the person does not initally enter an int. 
+    }//end of big if statement
+    else{ //else statement for if the person does not initally enter an int. 
             System.out.println("You did not enter an int.");
-        }//end of else statement
+    }//end of else statement
         } //end of main method
 } //end of class
