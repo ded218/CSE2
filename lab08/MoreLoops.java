@@ -50,19 +50,24 @@ public class MoreLoops{
         //COMMENT OUT THE ABOVE FIVE LINES AND REPLACE THE CODE
 	//WITH A WHILE LOOP
 */
-        
-        for (int c=0; c<10; c++){
-           if (n=1 || n=2){
-           	System.out.print("Case 2 ");
-           	continue; 
-           }
-           if (n=3){
+        for (int c=0; c<=10; c++){
+        	for( ; n==1 || n==2; ){
+        		System.out.print("Case 2 ");
+           		continue; 	
+        	}
+           if(n==3){
            	break;
            } 
-           if (n=4){
+           if(n==4){
            	System.out.println("Case 4");
            	System.out.println("Case 5");
            	
+           }
+           if(n==5){
+           	System.out.println("Case 5");
+           }
+           if(n>5 || n<1){
+           	System.out.println(n + " is > 5 or <1");
            }
            	
             
@@ -87,6 +92,7 @@ public class MoreLoops{
 		break;
 	}
 */
+
 	//COMMENT OUT THE ABOVE 16 LINES AND REWRITE THE CODE UING
 	// ONLY FOR LOOPS AND IF STATEMENS. BEFORE DOING SO, TRY
 	//RUNNING THE CODE WITH VARIOUS INPUTTED VALUES, E.G., 

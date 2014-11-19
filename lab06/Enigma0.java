@@ -8,10 +8,9 @@
 import java.util.Scanner;
 public class Enigma0{
   public static void main(String[] args) {
-    Scanner scan;
-    scan = new Scanner(System.in);
-    System.out.println("Enter an int- ");
-    int n=scan.nextInt();
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter an int- "); 
+    int n=scan.nextInt();  
     System.out.println("You entered "+n);
     
     int k=4,p=6,q=7,r=8;

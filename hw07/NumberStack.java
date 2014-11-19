@@ -24,11 +24,17 @@ public class NumberStack {
     for(int j=0; j<=n; j++){//outer j loop
         for(int i=0; i<j; i++){ //outer i loop
             for(i=i; i<j; i++){ //inner i loop, controls number of times row printed
+                for(int f=0; f<(2*n)-j; f++){
+                System.out.print(" ");
+                }
                 for(int k=0; k<(j*2)-1; k++){ //k loop, controls number of times printed within row
                     System.out.print(j); //printing the number 
                 }//closing the outside for loop
                 System.out.println(""); //an enter to make the loop go to the next line.                  
             }//end of  i loop
+                for(int u=0; u<(2*n)-j; u++){
+                System.out.print(" ");
+                }
                 for(int h=0; h<(j*2)-1; h++){//h loop to control print of dashes
                     System.out.print("-"); //printing dashes
                 }//end of i=0 for loop

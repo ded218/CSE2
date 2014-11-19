@@ -4,26 +4,20 @@
  * remaining. It does not always work. Find out when it doesn't
  */
 
-import java.util.Scanner;
-public class Enigma1{
-  public static void main(String []arg){
-    double percent;
-    System.out.print("Enter a value for the percent (0, 1,...99)- ");
-    double x=((new Scanner(System.in)).nextDouble());
-   System.out.println("You entered "+x+"%");
-   //print out the proportion remaining for select percentages
-   if(1-x/100==0.93)  //when the user enters 7
-      System.out.println("The proportion remaining is "+0.93);
-    else if(1-x/100==0.59)//when the user enters 41
-      System.out.println("The proportion remaining is "+0.59);
-    else if(1-x/100==0.86)//when the user enters 14
-      System.out.println("The proportion remaining is "+0.86);
-    else if(1-x/100==0.67)//when the user enters 33
-      System.out.println("The proportion remaining is "+0.67);
-    else if(1-x/100==0.4)//when the user enters 60
-      System.out.println("The proportion remaining is "+0.40);
-   }
-}
+import java.util.Scanner; // importing the scanner
+public class Enigma1{ //class 
+  public static void main(String []arg){ // main method
+    System.out.print("Enter a value for the percent (0, 1,...99)- "); // prompting user for input  
+    double x=((new Scanner(System.in)).nextDouble()); // declaring/ calling the scanner & accepting user input
+   System.out.println("You entered "+x+"%"); //telling user what they inputted in the form of a percentage 
+   double perC = x/100; // converts user input into a percent 
+   double reM = 1 - perC; // subtracts percentage that user inputted from one
+   if(x>0 && x<100){ // if statement limiting user input 
+     System.out.println("The proportion remaining is "+Math.round(100*reM)/100.00); //prints out portion remaining 
+   } //end of of if statment limiting income 
+   
+   } // end of main method 
+} // end of class 
 
 /* Error report: 
  *    (Exlain the error(s) that occur here, in this comment,
@@ -31,8 +25,18 @@ public class Enigma1{
  *    Hint: What kinds of input are unacceptable? What kinds of
  *        acceptable input don't produce the correct answer?
  * 
- * 
- * 
- * 
+ * The problem with the program is that it is limited in the 
+ * types of input it can take in. The if/else if statements 
+ * only account for specific numbers (94, 60 etc.). 
+ * Also the user's input is never actually converted into a
+ * percentage, it just prints the user's input with a "%" at the end
+ * To fix this problem I created a new double called perC, which 
+ * divided the user's input by 100 to convert it into a percent
+ * Then I created another double that subtracts the percentage 
+ * from perC from 1, called reM, so that you get the proportion 
+ * remaining which I then printed out, and used math.round to 
+ * ensure even decimals. i also deleted previous double called percentage.
+ * Then around all of that i added an if statement that limits the
+ * user input. 
  */
 
